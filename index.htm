@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="Images/logo3.png" alt="AskMeGuru Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li class="dropdown">
+                    <a href="#">Services <span>&#x25BE;</span></a>
+                    <div class="dropdown-content">
+                        <a href="#intro">Intro</a>
+                        <a href="#software-list">List of Softwares</a>
+                        <a href="#software-products">Our Software Products</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#login">Login</a></li>
+            </ul>
+            <div class="mobile-menu-icon">
+                <span>&#9776;</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Who Are We</h1>
+        </div>
+        <div class="breadcrumb">
+            <a href="#"><i class="fas fa-home"></i> Home</a>
+            <span>&#x27A4;</span>
+            <a href="#">About Us</a>
+        </div>
+    </section>
+
+    
+    <div class="about-container">
+      <!-- About Us Image -->
+      <div class="about-image" id="videoTrigger">
+          <img src="Images/you.png" alt="About Us Image">
+          <div class="play-button">
+              <i class="fa fa-play"></i>
+          </div>
+      </div>
+      <!-- About Us Text -->
+      <div class="about-text">
+          <h1>Leading Software <br>Development Company In <br>Hyderabad, India.</h1>
+         <p>ASKMEGURU TECHNOLOGIES is the leading digital platform for all business firms across the world and an one stop automated solution for your trade and industry. ASKMEGURU TECHNOLOGIES began its business operation in bulk SMS and Digital Marketing solutions providing company in December 2013. On the public interest we have done our platform into all over Telangana state focusing exclusively in high quality and cost-effective software development and implementation of services. We are advancing on a tremendous pace and with involvement of 15 + skilled and experienced people working in the organization. Depending on the size and field of your organization, we have different products and services to meet your requirements. We provide the optimum and customized solutions made for your organization. ASKMEGURU is a leading provider of white label search & monetization solutions. We serve a network of more than 100 web publishers globally. Offering core search solutions as a proven means to monetize audience via a search based advertising revenue stream.</p>
+      </div>
+  </div>
+</section>
+
+<!-- Modal Section for YouTube Video -->
+<div id="videoModal" class="modal">
+  <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</div>
+
+    <section>
+        <div class="stats-section">
+            <div class="stat">
+                <h2 class="counter" data-target="600">200+</h2>
+                <hr>
+                <p>Happy Customers</p>
+                
+            </div>
+            <div class="stat">
+                <h2 class="counter" data-target="100">100+</h2>
+                <hr>
+                <p>Satisfied Customers</p>
+                
+            </div>
+            <div class="stat">
+                <h2 class="counter" data-target="350">0+</h2>
+                <hr>
+                <p>Total Projects</p>
+              
+            </div>
+            <div class="stat">
+                <h2 class="counter" data-target="7">0+</h2>
+                <hr>
+                <p>Years Of Exp.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <div class="clients-section">
+      <h2>Our <span style="color: red;">Clients</span></h2>
+      <p>Some of our clients have taken software solutions from us</p>
+      <div class="carousel">
+          <span class="prev">&#10094;</span>
+          <img src="Images/iconicinfra_logo.png" alt="Client 1">
+          <img src="Images/impulse-logo.png" alt="Client 2">
+          <img src="Images/sysco-clean-logo.png" alt="Client 3">
+          <img src="Images/KEERTHI-PNG.png" alt="Client 4">
+          <span class="next">&#10095;</span>
+      </div>
+  </div>
+
+  
+
+  <footer>
+    <div class="footer-container">
+        <!-- Company Logo and Description -->
+        <div class="footer-logo">
+            <img src="Images/logo3.png" alt="Company Logo">
+            <p>Software constraints are only confining if you use them for what they’re intended to be used for.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+
+        <!-- Featured Links -->
+        <div class="footer-links">
+            <h4>Featured Cities</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-newsletter">
+            <h4>Our Newsletter</h4>
+            <input type="email" placeholder="Enter Your Email Address">
+            <button>Subscribe Now</button>
+        </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+        © Copyright 2020 Askmeguru Technologies. All Rights Reserved
+    </div>
+</footer>
+
+    <!-- JavaScript for mobile menu toggle and stats counter animation -->
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
