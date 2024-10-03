@@ -685,12 +685,8 @@ cursor: pointer;
 }
 
 
-
 footer {
-  /* background-color: #f9f9f9; */
-  
-  background-image: url("Images/footer-bg2.jpg");
-
+  background-color: #f9f9f9;
   padding: 40px 20px;
   text-align: center;
 }
@@ -702,13 +698,12 @@ footer {
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
-
- 
 }
 
 .footer-logo {
   flex: 1;
   text-align: left;
+  animation: fadeInLeft 1s ease-in-out;
 }
 
 .footer-logo img {
@@ -724,6 +719,7 @@ footer {
 .footer-links {
   flex: 1;
   text-align: center;
+  animation: fadeInUp 1s ease-in-out;
 }
 
 .footer-links h4 {
@@ -743,11 +739,21 @@ footer {
 .footer-links ul li a {
   color: #ff3333;
   text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-links ul li a:hover {
+  color: #ff0000;
 }
 
 .footer-newsletter {
   flex: 1;
   text-align: right;
+  animation: fadeInRight 1s ease-in-out;
+}
+
+.footer-newsletter h4 {
+  margin-bottom: 15px;
 }
 
 .footer-newsletter input {
@@ -755,6 +761,11 @@ footer {
   width: 70%;
   border: 1px solid #ccc;
   border-radius: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.footer-newsletter input:focus {
+  box-shadow: 0px 0px 10px rgba(255, 51, 51, 0.5);
 }
 
 .footer-newsletter button {
@@ -765,10 +776,12 @@ footer {
   border-radius: 20px;
   margin-left: -50px;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease;
 }
 
 .footer-newsletter button:hover {
   background-color: #ff0000;
+  transform: scale(1.05);
 }
 
 /* Social media icons */
@@ -780,6 +793,12 @@ footer {
   margin: 0 10px;
   color: #666;
   text-decoration: none;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: #ff3333;
+  transform: rotate(360deg);
 }
 
 .social-icons a i {
@@ -791,6 +810,50 @@ footer {
   margin-top: 30px;
   font-size: 0.9rem;
   color: #888;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Keyframes for animations */
+@keyframes fadeInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 /* Responsive Design */
